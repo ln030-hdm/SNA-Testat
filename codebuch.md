@@ -1,47 +1,59 @@
-Datensatz Netzwerk MTV Stuttgart
-Codebuch Stand 2021-07 erstellt von Laureta Nrecaj 
+## Edgelist
 
-Inhalt
-•	Edges.csv (Edgelist)
-•	Nodes.csv (Nodelist)
-•	Codebuch.md (Codierung der Datensätze)
-
-Ursprung und Datenerhebung
-Die Informationen stammen von der Website der Allianz MTV Stuttgart (https://www.stuttgarts-schoenster-sport.de/team/spielerinnen/), welche die Spielerinnen der Saison 2021/22 aufführt. 
-Das Netzwerk ist ein ungerichtetes two-mode Netzwerk. 
-Ich möchte herausfinden, aus welchen Heimatländern die Spielerinnen kommen und in welchen Vereinen sie zuvor gespielt haben. Zudem wird untersucht, ob sich hierbei Muster erkennen lassen. 
-
-EDGE-Attribute
-
-id
-(eindeutige Codierung des Knoten)
+**from**  
+id (eindeutige Codierung des Knoten)
 Die jeweiligen Initialen der Spielerinnen in Großbuchstaben
 
-NODE-Attribute
-
-id
-Identische ID wie aus der edgelist zur Identifikation der Knoten 
-
-name 
-Vor- und Nachname
-
-type	
-0= Person 
-1= Organisation (Verein oder Land)
-
-birth	
-Geburtsjahr der Spielerinnen
+**to**  
+id, eindeutige Bezeichnung des Vereins / des Heimatlandes  
+Verein und Land: selbstgewählte Abkürzungen
 
 
-age	
+## Nodelist
+
+**id (Bezeichnung der Kante)**  
+Identische ID wie aus der Edgelist zur Identifikation der Knoten
+
+Bei Spielerinnen: Die jeweiligen Initialen in Großbuchstaben
+Bei Vereinen: selbstgewählte Abkürzungen
+Bei Ländern: selbstgewählte Abkürzungen
+
+**name**   
+Voller Name der Spielerinnen, der Vereine und der Länder  
+ 
+**name 2**  
+Alternativnamen zur einfacheren Visualisierung
+
+Bei Spielerinnen und Länder: voller Name
+Bei Vereinen: selbstgewählte Abkürzungen (analag zur ID)
+
+**type**  
+0 = Spielerin   
+1 = Verein oder Land  
+ 
+**birth**  
+Geburtsjahr der Spielerin  
+ 
+**age**  
+Altersgruppe der Spielerinnen
+
 1= unter 20
 2= 21-23
 3= 24-26
 4= 27-30
 5= über 30
 
-position	
-Positionen, auf denen die Team-Mitglieder spielen
+**position**  
+Die Position der Spielerinnen 
 
-country
-Land, in welchem Spielerin geboren wurde
+1 = Mittelblock  
+2 = Zuspiel  
+3 = Außenangriff  
+4 = Diagonal  
+5 = Libera  
+ 
+**country**  
+Nationalität der Spielerinnen bzw. Land, in dem diese geboren wurden (Anfangsbuchstabe, außer dieser ist gleich. Dann noch zweiter Buchstabe dazu.)  
+ 
+
+
