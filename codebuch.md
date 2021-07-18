@@ -53,7 +53,7 @@ Die Position der Spielerinnen
 5 = Libera  
  
 **country**  
-Nationalität der Spielerinnen bzw. Land, in dem diese geboren wurden (Anfangsbuchstabe, außer dieser ist gleich. Dann noch zweiter Buchstabe dazu.)  
+Nationalität der Spielerinnen bzw. Land, in dem diese geboren wurden (Anfangsbuchstabe, außer dieser ist gleich. Dann noch zweiten und dritten Buchstaben dazu.)  
  
 
 
