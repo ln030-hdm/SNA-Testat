@@ -6,7 +6,8 @@ Die jeweiligen Initialen der Spielerinnen in Großbuchstaben
 
 **to**  
 id, eindeutige Bezeichnung des Vereins / des Heimatlandes  
-Verein und Land: selbstgewählte Abkürzungen
+Verein: selbstgewählte Abkürzungen
+Land: Anfangsbuchstabe, außer dieser ist gleich. Dann noch zweiten und dritten Buchstaben dazu.
 
 
 ## Nodelist
@@ -53,7 +54,17 @@ Die Position der Spielerinnen
 5 = Libera  
  
 **country**  
-Nationalität der Spielerinnen bzw. Land, in dem diese geboren wurden (Anfangsbuchstabe, außer dieser ist gleich. Dann noch zweiten und dritten Buchstaben dazu.)  
+Nationalität der Spielerinnen bzw. Land, in dem diese geboren wurden 
+
+1 = Niederlande
+2 = Bulgarien
+3 = Deutschland
+4 = Belgien
+5 = Polen
+6 = USA
+7 = Spanien
+8 = Finnland
+
  
 
 
